@@ -33,7 +33,7 @@ const styles = {
   },
   coloredBack: {
     width: '100%',
-    height: '250px',
+    height: window.innerWidth > 600 ? '250px' : '350px',
     background: '#ff6363',
   },
   siteTitle: {

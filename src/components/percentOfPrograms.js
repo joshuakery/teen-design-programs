@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
-    Box,
+    Box, Grid,
     Typography,
    } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -9,6 +9,7 @@ const useStyles = makeStyles({
     textContainer: {
         display: 'flex',
         alignItems: 'flex-end',
+        flexWrap: 'wrap',
     },
     text: {
         marginRight: '10px',
@@ -27,55 +28,63 @@ const useStyles = makeStyles({
     },
 });
 
-const getBars = fraction => {
+const getBars = (fraction, prevIndex) => {
     const bars = [];
     if (fraction) {
-        const tallBarStyle = getBarStyle(fraction, true);
-        const shortBarStyle = getBarStyle(fraction, false);
         for (let i=0; i<fraction[1]; i++) {
-            if (i < fraction[0]) {
-                bars.push(<div style={tallBarStyle} key={'bar'+i}></div>)
-            } else {
-                bars.push(<div style={shortBarStyle} key={'bar'+i}></div>)
-            }
+            bars.push(<div style={getBarStyle(fraction,i,prevIndex)} key={'bar'+i}></div>)
         }
     }
     return bars;
 }
 
-const getBarStyle = (fraction, isTall) => {
-    return {
+const getBarStyle = (fraction, index, prevIndex) => {
+    const delayStagger = prevIndex === fraction[0] ? 0 : 0.5 / (Math.abs(prevIndex - fraction[0]));
+    const border = window.innerWidth > 450 ? '1px solid #f3f3f3' : 'none';
+    const style = {
         background: "#ff6363",
         width: `calc(100% / ${fraction[1]})`,
-        height: isTall ? '100%' : '10%',
-        border: '1px solid #f3f3f3',
+        height: (index < fraction[0]) ? '100%' : '10%',
+        border: border,
         transition: '1s',
+    };
+    if (prevIndex > index) {
+        style.transitionDelay = `${(prevIndex - index) * delayStagger}s`;
+    } else {
+        style.transitionDelay = `${(index - prevIndex) * delayStagger}s`;
     }
+    return style;
 }
 
 const PercentageBar = props => {
     const { fraction } = props;
+    const [prevIndex, setPrevIndex] = useState(fraction[1]);
     const classes = useStyles();
-    const bars = getBars(fraction);
+    const bars = getBars(fraction, prevIndex);
+    useEffect(() => {
+        setPrevIndex(fraction[0]);
+    }, [fraction])
     return (
         <div>
-            <Box mb={2} className={classes.textContainer}>
-                <Typography variant="h4" className={classes.text}>
-                    displaying
-                </Typography>
-                <Typography variant="h4" className={classes.textBig}>
-                    {fraction[0]}
-                </Typography>
-                <Typography variant="h4" className={classes.text}>
-                    of
-                </Typography>
-                <Typography variant="h4" className={classes.textBig}>
-                    {fraction[1]}
-                </Typography>
-                <Typography variant="h4" className={classes.text}>
-                    programs
-                </Typography>
-            </Box>
+            <Grid item xs={12}>
+                <Box mb={2} className={classes.textContainer}>
+                    <Typography variant="h4" className={classes.text}>
+                        displaying
+                    </Typography>
+                    <Typography variant="h4" className={classes.textBig}>
+                        {fraction[0]}
+                    </Typography>
+                    <Typography variant="h4" className={classes.text}>
+                        of
+                    </Typography>
+                    <Typography variant="h4" className={classes.textBig}>
+                        {fraction[1]}
+                    </Typography>
+                    <Typography variant="h4" className={classes.text}>
+                        programs
+                    </Typography>
+                </Box>
+            </Grid>
             <div className={classes.containerStyle}>
                 {fraction && bars}
             </div>

@@ -1,15 +1,13 @@
 Program Title,Org Title,Categories,Length (time),Period,Paid,Cost,Pay/Hr,Stipend Paid,Aid?,Location,Remote?,Application Window,Age Group,Grade Band,Grades are Rising?,Affinity Group (if any),Link,Eligibility Requirements,Notes
 Young Women's Design & Building Institute,Girls Garage,"Architecture
-Carpentry
-Welding
-Drafting
+Carpentry & Fabrication
+Engineering
 Graphic Design",1 week,June,FALSE,0,,,FALSE,Berkeley CA,FALSE,February (ends March),,9-12,TRUE,"Girls (gender-expansive)
 BIPOC",https://girlsgarage.org/program/young-womens-design-and-building-institute/,,
 Advanced Design/Build,Girls Garage,"Architecture
 Construction
-Carpentry
-Welding
-Drafting
+Carpentry & Fabrication
+Engineering
 Graphic Design",4 week,3 Mondays in Fall + 1 Week in July,FALSE,0,,,FALSE,Berkeley CA,FALSE,,,9-12,TRUE,"Girls (gender-expansive)
 BIPOC",https://girlsgarage.org/program/advanced-design-build/,"by invitation (""Most participants in the Advanced Design/Build cohort have been coming to Girls Garage for many years and express great interest in STEM, design, architecture, or trades careers."")",is there also an open application?
 Teen Arts Council,Institute of Contemporary Art Boston,"Arts Management
@@ -20,7 +18,7 @@ https://www.boston.gov/departments/youth-engagement-and-employment/successlink-j
 ○ A full-time resident of Boston; currently enrolled in high school or a GED program
 ○ Legally authorized to work in the United States",Youth Engagement & Employment (YEE) will post job opportunities for youth to apply for directly. Youth may apply for up to 15 positions.
 Youth Arts Enterprise,Artists for Humanity,"Arts
-3D Design
+Industrial Design
 Graphic Design
 Video/Film
 Animation
@@ -32,12 +30,11 @@ Interior Design
 Architecture
 Landscape Design",1 month,July - August,FALSE,800,,,TRUE,Boston MA,FALSE,,,9-12,TRUE,N/A,https://www.teenlife.com/summer-program/boston-architectural-college-online-summary-academy-high-school-design-exploration/,,
 Professional Training,Boston City Lights,"Scene/Set Design
-Sound Design
+Sound & Lighting Design
 Graphic Design
 Photography
 Dance
-Theatre
-Music
+Music/Audio
 Video/Film",,,FALSE,0,,,FALSE,Boston MA,FALSE,rolling,,,FALSE,Underprivileged,http://bclperformingarts.org/,,
 Summer 2020 Internship,Boston Harbor Now,"Graphic Design
 Marketing
@@ -69,7 +66,7 @@ STEAM Team,MFA Boston,"Engineering
 Science
 Arts",12 month,,TRUE,,13,,FALSE,Boston MA,FALSE,,,10-10,FALSE,N/A,https://www.mfa.org/programs/teen-programs/steam-team,Must attend a Boston public school and/or live in Boston,confirm ongoing
 Curatorial Study Hall,MFA Boston,"Exhibit Design
-Curation
+Arts Management
 Arts",12 month,,TRUE,,13,,FALSE,Boston MA,FALSE,,,10-11,FALSE,N/A,https://www.mfa.org/programs/teen-programs/curatorial-study-hall,Must be a current participant in youth organizations Becoming a Man or The BASE,"confirm ongoing
 news"
 STEAM Team: Design Lab,Sociedad Latina,"Design
@@ -77,7 +74,7 @@ STEAM Team: Design Lab,Sociedad Latina,"Design
 Community Classes,Sociedad Latina,"Arts
 Video/Film
 Graphic Design
-Music
+Music/Audio
 Dance",indefinite,year-round,FALSE,0,,,FALSE,Boston MA,FALSE,year-round,8-18,,FALSE,Latino,https://www.sociedadlatina.org/arts-and-culture,,
 ¡emprende!,Sociedad Latina,"Design
 Business & Entrepreneurship",10 week,,TRUE,,,,FALSE,Boston MA,FALSE,,all,,FALSE,Latino,https://www.sociedadlatina.org/workforce-development,,
@@ -85,7 +82,7 @@ The Designery,Youth Build Boston,"Design
 Graphic Design
 Architecture
 Industrial Design",7 week - 10 week,,TRUE,,,,FALSE,Boston MA,FALSE,for Fall: September,,9-12,FALSE,N/A,https://www.youthbuildboston.org/program,,
-Clubhouse to College/Clubhouse to Career: Pathways to Success,Best Buy Teen Tech Center,"Web Design
+Clubhouse to College/Clubhouse to Career: Pathways to Success,Best Buy Teen Tech Center,"UI/UX Design
 Graphic Design
 Software
 Information Technology",5 week,November training + at least 5 week Summer internship,TRUE,,,,FALSE,Boston MA,FALSE,September - October,16-20,,FALSE,N/A,"https://flagshipclubhouse.org/c2c/
@@ -95,7 +92,6 @@ Neighborhood Design Project,Design Museum Everywhere,Design,14 week,,TRUE,,,,FAL
 Design Discovery Young Adult,Harvard University Graduate School of Design,"Design
 Architecture
 Urban Planning
-Urban Design
 Landscape Design
 Graphic Design
 Industrial Design
@@ -103,7 +99,6 @@ Arts",4 week,July - August,FALSE,0,,,FALSE,Cambridge MA,FALSE,April & rolling on
 Design Discovery,Harvard University Graduate School of Design,"Design
 Architecture
 Urban Planning
-Urban Design
 Landscape Design
 Graphic Design
 Industrial Design
@@ -117,7 +112,7 @@ Arts
 UI/UX Design
 Graphic Design
 Photography
-Music
+Music/Audio
 Dance
 Scene/Set Design
 Fashion
@@ -129,7 +124,7 @@ Arts
 UI/UX Design
 Graphic Design
 Photography
-Music
+Music/Audio
 Dance
 Scene/Set Design
 Fashion
@@ -140,7 +135,7 @@ Arts
 UI/UX Design
 Graphic Design
 Photography
-Music
+Music/Audio
 Dance
 Scene/Set Design
 Fashion
@@ -151,7 +146,7 @@ Arts
 UI/UX Design
 Graphic Design
 Photography
-Music
+Music/Audio
 Dance
 Scene/Set Design
 Fashion
@@ -199,7 +194,7 @@ Movement City Youth Network,Lawrence Community Works,"Fashion
 Arts
 Dance
 Graphic Design
-Music",1 month,,FALSE,10,,,FALSE,Lawrence MA,FALSE,rolling,10-18,,FALSE,N/A,http://www.lawrencecommunityworks.org/site/movement-city-youth-network/,,
+Music/Audio",1 month,,FALSE,10,,,FALSE,Lawrence MA,FALSE,rolling,10-18,,FALSE,N/A,http://www.lawrencecommunityworks.org/site/movement-city-youth-network/,,
 Let's Build Construction Camp for Girls,Let's Build Construction Camp for Girls,"Construction
 Architecture
 Engineering",1 week,August,FALSE,0,,,FALSE,Lehigh Valley PA,TRUE,,,,FALSE,Girls,https://www.letsbuildcamp.com/,,
@@ -211,7 +206,7 @@ Arts
 UI/UX Design
 Graphic Design
 Photography
-Music
+Music/Audio
 Dance
 Scene/Set Design
 Fashion
@@ -270,10 +265,10 @@ Access &Design Fellowship,&Design,Design,10 month,,FALSE,,,,FALSE,,TRUE,August-S
 Hip Hop Architecture Camp,AIA,"Architecture
 Urban Planning
 Fashion
-Music",1 week,August,FALSE,0,,,FALSE,,TRUE,,,6-12,FALSE,BIPOC,"https://www.architectmagazine.com/practice/applications-open-for-the-2020-hip-hop-architecture-camp_o
+Music/Audio",1 week,August,FALSE,0,,,FALSE,,TRUE,,,6-12,FALSE,BIPOC,"https://www.architectmagazine.com/practice/applications-open-for-the-2020-hip-hop-architecture-camp_o
 http://hiphoparchitecture.com/",,
 Credentialing Program: Penn Praxis: Architecture and Urban Design,Fresh Air Fund,"Architecture
-Urban Design
+Urban Planning
 ",7 week,July - August,TRUE,,,1000,FALSE,,TRUE,,14-17,,FALSE,N/A,https://freshair.org/summer-2020-programs/teen-programs/,"financial need, from New York City",confirm eligibility requirement and application window
 Credentialing Program: Video Game Design,Fresh Air Fund,Video Game Design,6 week,July - August,TRUE,,,750,FALSE,,TRUE,,14-17,,FALSE,N/A,https://freshair.org/summer-2020-programs/teen-programs/,"financial need, from New York City",confirm eligibility requirement and application window
 Project Pipeline National Virtual Summer Camp,NOMA,"Architecture
@@ -292,10 +287,10 @@ Project Pipeline Architectural Summer Camp - Online,SF NOMA,"Architecture
 Design
 Arts",1 week,August,FALSE,100,,,TRUE,,TRUE,,,6-12,FALSE,BIPOC,http://www.sfnoma.net/project-pipeline.html,,
 Creators of the Future,Wix,"Design
-Web Design",5 week,,FALSE,,,,FALSE,,TRUE,August-September,16-18,,FALSE,N/A,https://www.wix.com/futurecreators,,
+UI/UX Design",5 week,,FALSE,,,,FALSE,,TRUE,August-September,16-18,,FALSE,N/A,https://www.wix.com/futurecreators,,
 ACE Mentor Program,ACE Mentor,"Architecture
 Interior Design
-Planning
+Urban Planning
 Engineering
 Construction",5 month,January - May,FALSE,0,,,FALSE,various,FALSE,October - November,,9-12,FALSE,N/A,"https://www.acementor.org/students/faqs/
 https://www.acementor.org/files/6915/3210/0924/Student_Database_Registration_Guide_7_2018.pdf",,
@@ -387,7 +382,7 @@ Pre-College Design Program: Industrial Design Workshop,Georgia Tech College of D
 Courses,Art Center Extension Teens (ACX Teens),"Arts
 Design
 Industrial Design
-Fashion Design
+Fashion
 Video Game Design
 Graphic Design
 Video/Film",6 week,"Saturdays, Fall or Spring",FALSE,350,,,TRUE,Pasadena CA,TRUE,September,,9-12,FALSE,N/A,https://www.artcenter.edu/teens/index.php?page=about,,
