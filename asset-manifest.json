@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/joshuakery/teen-design-programs/static/css/main.70f9e417.chunk.css",
-    "main.js": "/joshuakery/teen-design-programs/static/js/main.462c92b7.chunk.js",
-    "main.js.map": "/joshuakery/teen-design-programs/static/js/main.462c92b7.chunk.js.map",
-    "runtime-main.js": "/joshuakery/teen-design-programs/static/js/runtime-main.c83f7135.js",
-    "runtime-main.js.map": "/joshuakery/teen-design-programs/static/js/runtime-main.c83f7135.js.map",
-    "static/js/2.86ebe09b.chunk.js": "/joshuakery/teen-design-programs/static/js/2.86ebe09b.chunk.js",
-    "static/js/2.86ebe09b.chunk.js.map": "/joshuakery/teen-design-programs/static/js/2.86ebe09b.chunk.js.map",
-    "static/js/3.5da736a0.chunk.js": "/joshuakery/teen-design-programs/static/js/3.5da736a0.chunk.js",
-    "static/js/3.5da736a0.chunk.js.map": "/joshuakery/teen-design-programs/static/js/3.5da736a0.chunk.js.map",
-    "index.html": "/joshuakery/teen-design-programs/index.html",
-    "static/css/main.70f9e417.chunk.css.map": "/joshuakery/teen-design-programs/static/css/main.70f9e417.chunk.css.map",
-    "static/js/2.86ebe09b.chunk.js.LICENSE.txt": "/joshuakery/teen-design-programs/static/js/2.86ebe09b.chunk.js.LICENSE.txt"
+    "main.css": "/teen-design-programs/static/css/main.70f9e417.chunk.css",
+    "main.js": "/teen-design-programs/static/js/main.462c92b7.chunk.js",
+    "main.js.map": "/teen-design-programs/static/js/main.462c92b7.chunk.js.map",
+    "runtime-main.js": "/teen-design-programs/static/js/runtime-main.6258e973.js",
+    "runtime-main.js.map": "/teen-design-programs/static/js/runtime-main.6258e973.js.map",
+    "static/js/2.86ebe09b.chunk.js": "/teen-design-programs/static/js/2.86ebe09b.chunk.js",
+    "static/js/2.86ebe09b.chunk.js.map": "/teen-design-programs/static/js/2.86ebe09b.chunk.js.map",
+    "static/js/3.5da736a0.chunk.js": "/teen-design-programs/static/js/3.5da736a0.chunk.js",
+    "static/js/3.5da736a0.chunk.js.map": "/teen-design-programs/static/js/3.5da736a0.chunk.js.map",
+    "index.html": "/teen-design-programs/index.html",
+    "static/css/main.70f9e417.chunk.css.map": "/teen-design-programs/static/css/main.70f9e417.chunk.css.map",
+    "static/js/2.86ebe09b.chunk.js.LICENSE.txt": "/teen-design-programs/static/js/2.86ebe09b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c83f7135.js",
+    "static/js/runtime-main.6258e973.js",
     "static/js/2.86ebe09b.chunk.js",
     "static/css/main.70f9e417.chunk.css",
     "static/js/main.462c92b7.chunk.js"
