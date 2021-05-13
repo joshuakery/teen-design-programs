@@ -14,8 +14,8 @@ import {
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 // import { getCsvData, getSelectOptions } from './dataHelpers';
-import Programs from './data/programs.json';
-import SelectOptions from './data/selectOptions.json';
+import Programs from './static/programs.json';
+import SelectOptions from './static/selectOptions.json';
 
 import ProgramCard from './components/programCard';
 import FilterSelect from './components/filterSelect';
