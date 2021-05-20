@@ -33,12 +33,15 @@ const styles = {
   },
   coloredBack: {
     width: '100%',
-    height: window.innerWidth > 600 ? '250px' : '350px',
+    // height: window.innerWidth > 600 ? '250px' : '350px',
     background: '#ff6363',
   },
   siteTitle: {
     color: 'white',
     fontWeight: 'bold',
+  },
+  siteDescription: {
+    color: 'white',
   },
   accordionSummary: {
     alignItems: 'flex-end',
@@ -67,7 +70,10 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+    this.filtersRef = React.createRef();
+
     this.state = {
+        behindHeight: '100px',
         selectOptions: {},
         filteredSelectOptions: {},
         data: [],
@@ -92,6 +98,8 @@ class App extends Component {
   }
 
   componentDidMount() {
+      this.handleResize();
+      window.addEventListener("resize",this.handleResize.bind(this));
       // getCsvData(this.setData);
       this.setState({
         data: Programs,
@@ -108,6 +116,17 @@ class App extends Component {
   }
 
   setData = state => this.setState(state);
+
+  handleResize = () => {
+    this.setState({ behindHeight: this.getBehindHeight() });
+  }
+
+  getBehindHeight = () => {
+    const node = this.filtersRef.current;
+    if (!node) return `100px`;
+    const middle = node.offsetHeight + Math.floor(node.offsetTop/2);
+    return `${middle}px`;
+  }
 
   updateFilteredSelectOptions = () => {
     const { filtered } = this.state;
@@ -264,13 +283,21 @@ class App extends Component {
   }
 
   render() {
-    const { filteredSelectOptions, filtered, select, radio, checkbox, range, data } = this.state;
+    const { behindHeight,
+            filteredSelectOptions,
+            filtered,
+            select,
+            radio,
+            checkbox,
+            range,
+            data
+          } = this.state;
     const fraction = [filtered.length,data.length];
     const { classes } = this.props;
     return (
       <div className={classes.html}>
         <div className={classes.behind}>
-          <div className={classes.coloredBack}></div>
+          <div className={classes.coloredBack} style={{height:behindHeight}}></div>
         </div>
       <Box maxWidth="1200px" margin="auto">
         <Box m={4}>
@@ -279,9 +306,12 @@ class App extends Component {
             <Typography variant="h3" className={classes.siteTitle}>
               DESIGN PROGRAMS FOR TEENS
             </Typography>
+            <Typography variant="body1" className={classes.siteDescription}>
+              Browse design programs, classes, and workshops for teenagers in the United States.
+            </Typography>
           </Box>
 
-          <Box mb={4} className={classes.filtersContainer}>
+          <Box mb={4} className={classes.filtersContainer} ref={this.filtersRef}>
             <Box m={4}>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
@@ -334,7 +364,7 @@ class App extends Component {
                   {filteredSelectOptions && Object.keys(filteredSelectOptions).map(optionName => {
                     if (optionName === 'category') return null;
                     return (
-                      <Grid item xs={12}>
+                      <Grid item xs={12} key={'filter-select-'+optionName+'container'}>
                         <FilterSelect
                           key={'filter-select-'+optionName}
                           optionName={optionName}
@@ -463,8 +493,8 @@ class App extends Component {
           {filtered.length > 0 &&
           filtered.map(entry => {
             return (
-              <Grid key={entry.programName+'-'+entry.orgName} item xs={12} sm={6} md={4}>
-                <ProgramCard data={entry} />
+              <Grid key={`${entry.programName}-${entry.orgName}`} item xs={12} sm={6} md={4}>
+                <ProgramCard data={entry} key={`${entry.programName}-${entry.orgName}-card`} />
               </Grid>
             );
           })
